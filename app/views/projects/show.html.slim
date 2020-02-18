@@ -1,9 +1,4 @@
-p#notice = notice
-
-p
-  strong Title:
-  = @project.title
-
-=> link_to 'Edit', edit_project_path(@project)
-'|
-=< link_to 'Back', projects_path
+section.section
+  .content.is-medium
+    h1.title= @project.title
+    p= @project.content

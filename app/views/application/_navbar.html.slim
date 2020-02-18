@@ -1,0 +1,9 @@
+nav.navbar role="navigation" aria-label="main navigation"
+  .navbar-brand
+    = link_to root_path, class: "navbar-item"
+      = image_tag("website_logo_transparent_background.png")
+  .navbar-menu
+    .navbar-end
+      = link_to "Home", root_path, class: "navbar-item"
+      = link_to "Projects", projects_path, class: "navbar-item"
+      = link_to "Blog", posts_path, class: "navbar-item"
