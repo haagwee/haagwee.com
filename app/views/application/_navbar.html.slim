@@ -2,6 +2,12 @@ nav.navbar role="navigation" aria-label="main navigation"
   .navbar-brand
     = link_to root_path, class: "navbar-item"
       = image_tag("website_logo_transparent_background.png")
+
+    a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+      span aria-hidden="true"
+      span aria-hidden="true"
+      span aria-hidden="true"
+
   .navbar-menu
     .navbar-end
       = link_to "Home", root_path, class: "navbar-item"
