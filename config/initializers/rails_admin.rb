@@ -38,4 +38,11 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'Post' do
+    edit do
+      field :title
+      field :content, :froala
+    end
+  end
 end
