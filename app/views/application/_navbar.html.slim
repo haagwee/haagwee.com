@@ -3,13 +3,15 @@ nav.navbar role="navigation" aria-label="main navigation"
     = link_to root_path, class: "navbar-item"
       = image_tag("website_logo_transparent_background.png")
 
-    a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+    a.navbar-burger.burger role="button" aria-label="menu" aria-expanded="false"
       span aria-hidden="true"
       span aria-hidden="true"
       span aria-hidden="true"
 
   .navbar-menu
+    .navbar-start
+      = link_to "Haagwee", root_path, class: "navbar-item"
     .navbar-end
-      = active_link_to "Home", root_path, class: "navbar-item", class_active: "is-active"
+      = active_link_to "Home", root_path, class: "navbar-item", class_active: "is-active", active: :exclusive
       = active_link_to "Projects", projects_path, class: "navbar-item", class_active: "is-active"
       = active_link_to "Blog", posts_path, class: "navbar-item", class_active: "is-active"
