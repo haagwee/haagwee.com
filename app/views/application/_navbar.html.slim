@@ -10,6 +10,6 @@ nav.navbar role="navigation" aria-label="main navigation"
 
   .navbar-menu
     .navbar-end
-      = link_to "Home", root_path, class: "navbar-item"
-      = link_to "Projects", projects_path, class: "navbar-item"
-      = link_to "Blog", posts_path, class: "navbar-item"
+      = active_link_to "Home", root_path, class: "navbar-item", class_active: "is-active"
+      = active_link_to "Projects", projects_path, class: "navbar-item", class_active: "is-active"
+      = active_link_to "Blog", posts_path, class: "navbar-item", class_active: "is-active"
