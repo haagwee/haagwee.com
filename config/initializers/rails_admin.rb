@@ -42,6 +42,7 @@ RailsAdmin.config do |config|
   config.model 'Post' do
     edit do
       field :title
+      field :image
       field :content, :froala
     end
   end
