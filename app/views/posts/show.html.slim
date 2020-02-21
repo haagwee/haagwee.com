@@ -1,4 +1,8 @@
+.hero.is-fullheight.is-primary.has-background
+  = image_tag @post.image, class: "hero-background is-transparent"
+  .hero-body
+    .container
+      h1.title= @post.title
 section.section
   .content.is-medium
-    h1.title= @post.title
     == @post.content
