@@ -1,9 +1,17 @@
 section.section
-  .content.is-medium
-    h1.title Projects
-    ul
-      - @projects.each do |project|
-        li
-          p
-            span= l(project.created_at, format: :short)
-            = link_to project.title, project_path(project)
+  h1.title Projects
+  .columns.is-multiline
+    - @projects.each do |project|
+      .column.is-12-mobile.is-6-tablet.is-3-desktop
+        .card.is-shadowless.is-slightly-rounded
+          .card-image
+            figure.image
+              = link_to project_path(project) do
+                = image_tag(project.image)
+          .card-content
+            .content
+              p
+                span.title.is-4.is-capitalized
+                  = link_to project.title, project_path(project)
+                br
+                span= l(project.created_at, format: :short)
