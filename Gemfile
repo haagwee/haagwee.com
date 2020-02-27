@@ -21,6 +21,7 @@ gem "rails_admin", "~> 2.0"
 gem "wysiwyg-rails", "~> 3.1.0"
 gem "active_link_to", "~> 1.0.5"
 gem "google-cloud-storage", "~> 1.11", require: false
+gem 'image_processing'
 
 group :development, :test do
   gem "byebug", platform: :mri
