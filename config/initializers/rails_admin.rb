@@ -39,7 +39,7 @@ RailsAdmin.config do |config|
     # history_show
   end
 
-  config.model 'Projects' do
+  config.model 'Project' do
     edit do
       field :title
       field :image
