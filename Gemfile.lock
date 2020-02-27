@@ -88,6 +88,10 @@ GEM
       responders
       warden (~> 1.2.3)
     digest-crc (0.4.1)
+    dotenv (2.7.5)
+    dotenv-rails (2.7.5)
+      dotenv (= 2.7.5)
+      railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     execjs (2.7.0)
     faraday (0.17.3)
@@ -314,6 +318,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  dotenv-rails
   google-cloud-storage (~> 1.11)
   image_processing
   jbuilder (~> 2.5)

@@ -23,6 +23,7 @@ gem "active_link_to", "~> 1.0.5"
 gem "google-cloud-storage", "~> 1.11", require: false
 gem 'image_processing'
 gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
   gem "byebug", platform: :mri
