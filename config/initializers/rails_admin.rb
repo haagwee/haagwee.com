@@ -39,6 +39,14 @@ RailsAdmin.config do |config|
     # history_show
   end
 
+  config.model 'Projects' do
+    edit do
+      field :title
+      field :image
+      field :content, :froala
+    end
+  end
+
   config.model 'Post' do
     edit do
       field :title
