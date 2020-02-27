@@ -1,3 +1,7 @@
-section.section
-  .content.is-medium
-    h1.title= @project.title
+section.hero.is-primary
+  .hero-body
+    .container
+      h1.title= @project.title
+section
+  .container
+    == @project.content
