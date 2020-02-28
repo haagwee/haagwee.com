@@ -26,11 +26,14 @@ gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 gem 'dotenv-rails', groups: [:development, :test]
 gem "font-awesome-rails"
 gem 'simplecov', require: false, group: :test
+gem 'rails-controller-testing'
+gem 'faker'
 
 group :development, :test do
   gem "byebug", platform: :mri
   gem 'rspec-rails', '~> 4.0.0.beta'
   gem 'shoulda-matchers'
+  gem "factory_bot_rails"
 end
 
 group :development do
