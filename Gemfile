@@ -28,6 +28,8 @@ gem "font-awesome-rails"
 
 group :development, :test do
   gem "byebug", platform: :mri
+  gem 'rspec-rails', '~> 4.0.0.beta'
+  gem 'shoulda-matchers'
 end
 
 group :development do
