@@ -25,6 +25,7 @@ gem 'image_processing'
 gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 gem 'dotenv-rails', groups: [:development, :test]
 gem "font-awesome-rails"
+gem 'simplecov', require: false, group: :test
 
 group :development, :test do
   gem "byebug", platform: :mri
