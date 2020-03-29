@@ -5,5 +5,8 @@ section.section
       - @posts.each do |post|
         li
           p
-            span= l(post.created_at, format: :short)
-            = link_to post.title, post_path(post)
+            span= l(post[:date], format: :short)
+            = link_to post[:title], post[:link]
+      li
+        p
+          = link_to "...", "https://medium.com/@haagwee", target: "_blank"
